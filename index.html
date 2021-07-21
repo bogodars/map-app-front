@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Using OpenLayers with Parcel</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      #map {
+        width: 100%;
+        height: 800px;
+      }
+      .container {
+        display: flex;
+      }
+      .aside {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+      h2 {
+        text-align: center;
+      }
+      button {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Your places app</h2>
+    <div class="container">
+      <div class="aside">
+        <button id="kyiv">Kyiv</button>
+        <button id="odesa">Odesa</button>
+        <button id="lviv">Lviv</button>
+      </div>
+      <div id="map"><div id="popup"></div></div>
+      <div>
+        <button class="reset" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
